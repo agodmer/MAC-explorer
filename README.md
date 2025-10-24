@@ -62,11 +62,11 @@ hyperparams_agg.csv — aggregated hyperparameter-performance table
 Supplementary_Figures_S2_S4.pdf — figures for publication (S2–S4)
 
 📊 Output Summary
-File	Description
-hyperparams_agg.csv	Combined hyperparameter grid and metrics
-Supplementary_Figures_S2_S4.pdf	Figures: Kappa distributions, num.trees effect, heatmap
-models_results*.RData	Trained models and confusion matrices
-kmers_features_by_batch{k}.RData	Computed k-mer frequency matrices
+File and	Description
+hyperparams_agg.csv	-> Combined hyperparameter grid and metrics
+Supplementary_Figures_S2_S4.pdf -> 	Figures: Kappa distributions, num.trees effect, heatmap
+models_results*.RData	->  Trained models and confusion matrices
+kmers_features_by_batch{k}.RData	-> Computed k-mer frequency matrices
 
 🧪 Reproducibility Example
 bash
