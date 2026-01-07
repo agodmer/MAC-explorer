@@ -27,7 +27,7 @@ install.packages(c(
 ))
 Optional: reshape2, gridExtra
 ```
-🚀 Pipeline Overview
+Pipeline Overview
 
 Step 1 — Feature Extraction
 ```r
@@ -56,7 +56,7 @@ Outputs:
 #Supplementary_Figures_S2_S4.pdf — figures for publication (S2–S4)
 ```
 
-📊 Output Summary
+Output Summary
 File and	Description
 ```r
 #hyperparams_agg.csv	-> Combined hyperparameter grid and metrics
@@ -64,7 +64,7 @@ File and	Description
 #models_results*.RData	->  Trained models and confusion matrices
 #kmers_features_by_batch{k}.RData	-> Computed k-mer frequency matrices
 ```
-🧪 Reproducibility Example
+Reproducibility Example
 ```r
 # Step 1: Feature extraction
 Rscript Scripts/01_feature_extraction.R
@@ -75,5 +75,51 @@ Rscript Scripts/02_model_training.R
 # Step 3: Hyperparameter aggregation & visualization
 Rscript Scripts/03_hyperparam_analysis.R
 ```
-🧬 Citation
-If you use this repository, please cite as:
+R session information and package references
+```r
+R version: >= 4.2.0
+
+The following R packages were used for data analysis, statistical testing, clustering,
+machine learning, and visualization:
+
+Core statistical analysis and multivariate methods
+- stats (base R): PCA, hierarchical clustering (hclust), Wilcoxon tests, Spearman correlations
+- FactoMineR (v2.9): principal component analysis
+- minpack.lm (v1.2.4): nonlinear least-squares fitting (double-sigmoid models)
+- effsize (>= 0.8.1): effect size estimation (Cohen’s d)
+
+Clustering comparison and concordance metrics
+- mclust (v6.1.1): Adjusted Rand Index (ARI)
+- aricode (v1.0.3): normalized mutual information (NMI)
+- clue (v0.3.66): clustering comparison utilities
+
+Phylogenetics and tree handling
+- ape (v5.8.1): tree manipulation and export (Newick format)
+
+Distance-based ecological and genomic analyses
+- vegan (>= 2.6-4): PERMANOVA (adonis), Mantel tests
+- proxy (>= 0.4-27): Jaccard distance computation
+
+Pan-genome and accessory genome analyses
+- tidyverse (>= 2.0.0): data manipulation and visualization
+  - dplyr
+  - tidyr
+  - ggplot2
+  - readr
+  - purrr
+
+Machine learning and classification
+- Biostrings (>= 2.66.0): k-mer frequency computation
+- ranger (v0.17.0): random forest implementation
+- caret (v6.0-94): model training, resampling, and evaluation
+- e1071 (>= 1.7-14): auxiliary ML utilities (caret dependency)
+
+Reproducibility and utilities
+- here (>= 1.0.1): project-relative file paths
+- cowplot (>= 1.1.1): figure assembly
+```
+
+# Citation
+If you use this repository, please cite as: 
+Poignon, C., Matondo, M., Giai Gianetto, Q., Douché, T., Saffarian, A., Veziris, N., Aubry, A. & Godmer, A.
+MAC-Explorer: bridging genome-based taxonomy and an identification tool for the Mycobacterium avium complex.
