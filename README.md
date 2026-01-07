@@ -66,7 +66,6 @@ File and	Description
 ```
 🧪 Reproducibility Example
 ```r
-Copier le code
 # Step 1: Feature extraction
 Rscript Scripts/01_feature_extraction.R
 
