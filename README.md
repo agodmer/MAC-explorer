@@ -19,6 +19,8 @@ README.md
 
 **Language:** R (≥ 4.2)
 
+Analyses were run in R v4.3.2. Visualization and data handling used dplyr v1.1.4 , ggplot2 v3.4.4 , and rstatix v0.7.2.
+
 **Core packages:**
 ```r
 install.packages(c(
